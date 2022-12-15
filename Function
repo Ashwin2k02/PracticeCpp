@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int add(int a,int b)
+{
+    return(a+b);
+}
+int sub(int a,int b)
+{
+    return(a-b);
+}
+int mul(int a,int b)
+{
+    return(a*b);
+}
+int divide(int a,int b)
+{
+    return(a/b);
+}
+int mod(int a,int b)
+{
+    return(a%b);
+}
+int main()
+{
+    int x,y,r,s,t,u,v;
+    cin>>x>>y;
+    r=add(x,y);
+    s=sub(x,y);
+    t=mul(x,y);
+    u=divide(x,y);
+    v=mod(x,y);
+    cout<<"Addition :"<<r<<endl;
+    cout<<"Subtraction :"<<s<<endl; 
+    cout<<"Multuiplication :"<<t<<endl; 
+    cout<<"Division :"<<u<<endl; 
+    cout<<"Modulus :"<<v<<endl; 
+}
