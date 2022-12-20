@@ -1,0 +1,14 @@
+/*Write a program to get a float value from the user and display it in the below-mentioned format*/
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float A;
+    cin>>A;
+    cout<<fixed<<setprecision(6)<<A<<endl;
+    cout<<fixed<<setprecision(3)<<A<<endl;
+    cout<<fixed<<setprecision(2)<<A<<endl;
+    cout<<fixed<<setprecision(1)<<A;
+}
