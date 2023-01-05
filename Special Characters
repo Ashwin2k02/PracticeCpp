@@ -1,0 +1,43 @@
+/* Getting special charcters as input 
+Simple Calculator */
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+    int num1,num2,op;
+    string c;
+    cin>>num1>>num2;
+    cin>>c;
+    if(c=="+")
+    {
+        op=1;
+    }
+    if(c=="-")
+    {
+        op=2;
+    }
+    if(c=="/")
+    {
+        op=3;
+    }
+    if(c=="%")
+    {
+        op=4;
+    }
+    switch(op)
+    {
+    case 1:
+        cout<<num1+num2;
+    break;
+    case 2:
+        cout<<num1-num2;
+    break;
+    case 3:
+        cout<<num1/num2;
+    break;
+    case 4:
+        cout<<num1%num2;
+    break;
+    }
+}
