@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num1,num2,num3;
+    cin>>num1>>num2>>num3;
+    if(num1+num2+num3<=180)
+    {
+        if(num1==num2==num3)
+        {
+            cout<<"Prize 3";
+        }
+        else if(num1==90 || num2==90 || num3==90)
+        {
+            cout<<"Prize 2";
+        }
+        else if(num1!=num2!=num3)
+        {
+            cout<<"Prize 1";
+        }
+    }
+    else
+    {
+        cout<<"No Prize";
+    }
+}
