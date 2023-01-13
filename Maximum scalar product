@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int size,i,sum=0,j,d;
+    cin>>size;
+    int a[size],b[size];
+    for(i=0;i<size;i++)
+    {
+        cin>>a[i];
+    }
+    for(int i=0; i<size; i++)
+    {
+       for(int j=i+1; j<size; j++)
+       { 
+           if(a[i]>a[j])
+           {
+               int asc=a[i];
+               a[i]=a[j];
+               a[j]=asc;
+           }
+       }
+   }
+    for(i=0;i<size;i++)
+    {
+        cin>>b[i];
+    }
+    for(int i=0; i<size; i++)
+    {
+       for(int j=i+1; j<size; j++)
+       { 
+           if(b[i]>b[j])
+           {
+               int asc=b[i];
+               b[i]=b[j];
+               b[j]=asc;
+           }
+       }
+   }
+    for(i=0;i<size;i++)
+    {
+        sum+=a[i]*b[i];
+    }
+    cout<<sum;
+}
